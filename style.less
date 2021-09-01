@@ -1,0 +1,230 @@
+@font-face {
+	font-family: "Open Sans";
+	src: url("assets/fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Banny";
+	src: url("assets/fonts/banny/Banny-Round.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+
+	#home {
+		display: flex;
+		flex-direction: column;
+		height: 100vh;
+		width: 100%;
+		background: url("assets/header-bg.png");
+		background-size: cover;
+
+		.menu {
+			height: 100px;
+			ul {
+				margin: 0;
+				padding: 0;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				text-align: center;
+				li {
+					color: white;
+					list-style-type: none;
+					text-transform: uppercase;
+					font-family: "Open Sans";
+					font-style: normal;
+					font-weight: bold;
+					font-size: 12px;
+					line-height: 18px;
+					padding: 41px;
+					cursor: pointer;
+					z-index: 1;
+				}
+			}
+			.vector {
+				position: relative;
+				display: flex;
+				flex-flow: row;
+				justify-content: center;
+				align-items: center;
+				transform: translate(0, -75px);
+				z-index: 0;
+				hr {
+					flex: 1;
+					border: 1px solid rgba(255, 255, 255, 0.2);
+				}
+				img {
+					padding: 0px 48px;
+				}
+
+				.vertical_lines {
+					display: flex;
+					justify-content: space-between;
+					position: absolute;
+					width: 849px;
+					top: 76px;
+					height: calc(100vh - 100px);
+					.vl {
+						border: 1px solid rgba(255, 255, 255, 0.2);
+						height: 100%;
+						z-index: -1;
+					}
+				}
+			}
+		}
+		.main {
+			position: relative;
+			flex-basis: 200px;
+			flex-grow: 1;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			.schedule {
+				position: absolute;
+				left: 0;
+				align-self: center;
+				.text {
+					font-family: "Open Sans";
+					font-style: normal;
+					font-weight: bold;
+					font-size: 12px;
+					line-height: 12px;
+					color: #ffffff;
+					transform: rotate(-90deg) translateX(-50%);
+					transform-origin: 0 0;
+				}
+			}
+
+			.wrapper1 {
+				flex-grow: 1;
+				flex: 1 1 33%;
+			}
+			.wrapper3 {
+				flex-grow: 1;
+				flex: 1 1 33%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				.down_block {
+					width: 60px;
+					height: 60px;
+					border: 1px solid rgba(255, 255, 255, 0.2);
+					border-radius: 30px;
+					background: url("assets/header-bg.png");
+					background-attachment: fixed;
+					background-size: cover;
+					background-position: 0 0;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+
+					.arrow_block {
+						width: 40px;
+						height: 40px;
+						border: 0;
+						border-radius: 20px;
+						background: white;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						a {
+							font-style: normal;
+							font-weight: 900;
+							font-size: 20px;
+							line-height: 23px;
+							text-decoration: none;
+
+							color: #333333;
+						}
+					}
+				}
+			}
+
+			.title {
+				color: white;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+
+				h6 {
+					font-family: "Open Sans";
+					font-style: normal;
+					font-weight: bold;
+					font-size: 12px;
+					line-height: 14px;
+					letter-spacing: 0.5em;
+					text-transform: uppercase;
+				}
+				h1 {
+					font-family: "Banny";
+					font-size: 96px;
+					line-height: 0px;
+					text-transform: uppercase;
+				}
+				hr {
+					border: 5px #e8c300 solid;
+					border-radius: 50px;
+					width: 60px;
+					margin: 0;
+				}
+				.buttons {
+					margin-top: 30px;
+
+					input {
+						margin: 0 10px;
+						color: #ffffff;
+						font-family: Open Sans;
+						font-style: normal;
+						font-weight: bold;
+						font-size: 12px;
+						line-height: 20px;
+						background: #e8c300;
+						border-radius: 5px;
+						width: 200px;
+						height: 60px;
+					}
+					.explore {
+						border: 1px solid rgba(255, 255, 255, 0.5);
+						box-sizing: border-box;
+						background: none;
+					}
+				}
+			}
+
+			.social {
+				position: absolute;
+				right: 0;
+				align-self: center;
+
+				.links {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: space-between;
+					height: 220px;
+					a {
+						padding-left: 50px;
+						color: white;
+						text-decoration: none;
+						font-size: 20px;
+						line-height: 23px;
+					}
+				}
+			}
+		}
+	}
+}
+
+body > div {
+	padding: 0 80px;
+	box-sizing: border-box;
+}
