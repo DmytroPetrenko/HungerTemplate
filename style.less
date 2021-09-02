@@ -222,6 +222,86 @@ body {
 			}
 		}
 	}
+
+	#about {
+		height: 675px;
+		display: flex;
+
+		.text_block {
+			flex: 1 1 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding-right: 40px;
+			h2 {
+				font-family: "Banny";
+				font-size: 36px;
+				line-height: 48px;
+
+				text-align: center;
+				text-transform: uppercase;
+
+				color: #000000;
+			}
+			hr {
+				border: 5px #e8c300 solid;
+				border-radius: 50px;
+				width: 60px;
+				margin: 0;
+			}
+			.subheader {
+				font-family: "Open Sans";
+				font-style: normal;
+				font-weight: bold;
+				font-size: 18px;
+				line-height: 28px;
+
+				text-align: center;
+
+				color: #000000;
+			}
+			.text {
+				font-family: "Open Sans";
+				font-style: normal;
+				font-size: 14px;
+				line-height: 24px;
+
+				text-align: center;
+
+				color: #000000;
+			}
+		}
+		.image_block {
+			flex: 1 1 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			.wrapper {
+				position: relative;
+				width: 600px;
+				height: 475px;
+				img {
+					position: absolute;
+					top: 0;
+					right: 85px;
+					width: 475px;
+					height: 475px;
+				}
+				.squere {
+					position: absolute;
+					top: 113px;
+					right: 0;
+					width: 250px;
+					height: 250px;
+					border: 20px solid #e8c300;
+					box-sizing: border-box;
+					filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
+					border-radius: 5px;
+				}
+			}
+		}
+	}
 }
 
 body > div {
