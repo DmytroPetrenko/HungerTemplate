@@ -303,7 +303,8 @@ body {
 		}
 	}
 
-	#team {
+	#team,
+	#specialties {
 		height: 675px;
 		background: url("assets/specialty-bg.png");
 		background-size: contain;
@@ -399,6 +400,24 @@ body {
 		}
 		.footer {
 			height: 100px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			.elipses {
+				width: 70px;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				.elipse {
+					width: 10px;
+					height: 10px;
+					border-radius: 10px;
+					background: rgba(255, 255, 255, 0.5);
+				}
+				.selected {
+					background: white;
+				}
+			}
 		}
 	}
 
