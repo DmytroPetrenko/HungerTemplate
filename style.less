@@ -401,6 +401,136 @@ body {
 			height: 100px;
 		}
 	}
+
+	#booking {
+		height: 675px;
+		.header {
+			height: 100px;
+		}
+		.main {
+			display: flex;
+			.form_block {
+				flex: 1 1 0;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+
+				h2 {
+					font-family: "Banny";
+					font-size: 36px;
+					line-height: 48px;
+
+					text-align: center;
+					text-transform: uppercase;
+
+					color: #000000;
+					margin: 0;
+				}
+				hr {
+					border: 5px #e8c300 solid;
+					border-radius: 50px;
+					width: 60px;
+					margin: 0;
+					margin: 20px;
+				}
+
+				.form {
+					fieldset {
+						border: none;
+						padding: 0;
+						position: relative;
+						clear: both;
+						margin: 0;
+
+						input,
+						select {
+							width: 277px;
+							height: 60px;
+							background: #e5e5e5;
+							border-radius: 5px;
+							border: 0;
+							margin: 5px;
+							padding: 0;
+						}
+						input::placeholder {
+							padding-left: 15px;
+						}
+						input::placeholder,
+						select {
+							color: rgba(51, 51, 51, 0.5);
+						}
+						select {
+							padding-left: 10px;
+						}
+						.btn {
+							width: calc(100% - 10px);
+							height: 60px;
+							background: #e8c300;
+							border-radius: 5px;
+							border: 0;
+							margin: 5px;
+							color: white;
+							text-transform: uppercase;
+							font-family: "Open Sans";
+							font-style: normal;
+							font-weight: bold;
+							font-size: 12px;
+							line-height: 20px;
+						}
+					}
+				}
+			}
+			.image_block {
+				flex: 1 1 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				.wrapper {
+					position: relative;
+					width: 600px;
+					height: 475px;
+					img {
+						position: absolute;
+						top: 0;
+						right: 85px;
+						width: 475px;
+						height: 475px;
+					}
+					.squere {
+						position: absolute;
+						top: 113px;
+						right: 0;
+						width: 250px;
+						height: 250px;
+						border: 20px solid #e8c300;
+						box-sizing: border-box;
+						filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
+						border-radius: 5px;
+					}
+				}
+			}
+		}
+		.footer {
+			height: 100px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			p {
+				margin: 0;
+				font-family: "Open Sans";
+				font-style: normal;
+				font-weight: normal;
+				font-size: 12px;
+				line-height: 12px;
+				text-align: center;
+
+				color: rgba(51, 51, 51, 0.5);
+
+				border-radius: 5px;
+			}
+		}
+	}
 }
 
 body > div {
